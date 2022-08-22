@@ -1,0 +1,56 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+@keyframes loginslider {
+  from {left: -1800px;}
+  to {left: 0;}
+}
+
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation-name: loginslider;
+  animation-duration: 4s;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.form-login input, button {
+  margin-bottom: 10px;
+}
+
+.form-login input {
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: medium;
+  line-height: 15px;
+  outline: none;
+}
+
+.form-login button {
+  border: none;
+  padding: 8px 0;
+  border-radius: 3px;
+  font-size: medium;
+  background-color: lightblue;
+}
+
+.form-login button:hover {
+  background-color:cornflowerblue;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.7s;
+  transform: scale(1.03);
+}
